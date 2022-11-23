@@ -9,7 +9,7 @@ import Foundation
 
 class BudgetService {
     
-    func totalAmoumt() -> Int {
+    func totalAmoumt(start: Date, end: Date) -> Int {
         return 0
     }
 }

@@ -21,6 +21,9 @@ final class BudgetServiceTests: XCTestCase {
     }
     
     func testNoBudgets() {
-        XCTAssertEqual(budgetService.totalAmoumt(), 0)
+        XCTAssertEqual(budgetService.totalAmoumt(
+            start: Date(),
+            end: Date()
+        ), 0)
     }
 }
