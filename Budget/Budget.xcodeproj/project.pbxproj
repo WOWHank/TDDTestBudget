@@ -13,7 +13,18 @@
 		360A84802906E8B10007B3D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360A847E2906E8B10007B3D1 /* Main.storyboard */; };
 		360A84822906E8B30007B3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360A84812906E8B30007B3D1 /* Assets.xcassets */; };
 		360A84852906E8B30007B3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360A84832906E8B30007B3D1 /* LaunchScreen.storyboard */; };
+		F851C43C292DBEB7007BBF95 /* BudgetServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F851C43B292DBEB7007BBF95 /* BudgetServiceTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F851C43D292DBEB7007BBF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360A846D2906E8B10007B3D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360A84742906E8B10007B3D1;
+			remoteInfo = Budget;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		360A84752906E8B10007B3D1 /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		360A84812906E8B30007B3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360A84842906E8B30007B3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		360A84862906E8B30007B3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F851C439292DBEB7007BBF95 /* BudgetServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F851C43B292DBEB7007BBF95 /* BudgetServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		360A84722906E8B10007B3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F851C436292DBEB7007BBF95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				360A84772906E8B10007B3D1 /* Budget */,
+				F851C43A292DBEB7007BBF95 /* BudgetServiceTests */,
 				360A84762906E8B10007B3D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				360A84752906E8B10007B3D1 /* Budget.app */,
+				F851C439292DBEB7007BBF95 /* BudgetServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				360A84862906E8B30007B3D1 /* Info.plist */,
 			);
 			path = Budget;
+			sourceTree = "<group>";
+		};
+		F851C43A292DBEB7007BBF95 /* BudgetServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F851C43B292DBEB7007BBF95 /* BudgetServiceTests.swift */,
+			);
+			path = BudgetServiceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 360A84752906E8B10007B3D1 /* Budget.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F851C438292DBEB7007BBF95 /* BudgetServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F851C441292DBEB7007BBF95 /* Build configuration list for PBXNativeTarget "BudgetServiceTests" */;
+			buildPhases = (
+				F851C435292DBEB7007BBF95 /* Sources */,
+				F851C436292DBEB7007BBF95 /* Frameworks */,
+				F851C437292DBEB7007BBF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F851C43E292DBEB7007BBF95 /* PBXTargetDependency */,
+			);
+			name = BudgetServiceTests;
+			productName = BudgetServiceTests;
+			productReference = F851C439292DBEB7007BBF95 /* BudgetServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +142,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					360A84742906E8B10007B3D1 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					F851C438292DBEB7007BBF95 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 360A84742906E8B10007B3D1;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				360A84742906E8B10007B3D1 /* Budget */,
+				F851C438292DBEB7007BBF95 /* BudgetServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 				360A84852906E8B30007B3D1 /* LaunchScreen.storyboard in Resources */,
 				360A84822906E8B30007B3D1 /* Assets.xcassets in Resources */,
 				360A84802906E8B10007B3D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F851C437292DBEB7007BBF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F851C435292DBEB7007BBF95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F851C43C292DBEB7007BBF95 /* BudgetServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F851C43E292DBEB7007BBF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360A84742906E8B10007B3D1 /* Budget */;
+			targetProxy = F851C43D292DBEB7007BBF95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		360A847E2906E8B10007B3D1 /* Main.storyboard */ = {
@@ -334,6 +410,44 @@
 			};
 			name = Release;
 		};
+		F851C43F292DBEB7007BBF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HankKuo.BudgetServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Budget";
+			};
+			name = Debug;
+		};
+		F851C440292DBEB7007BBF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HankKuo.BudgetServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Budget";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +465,15 @@
 			buildConfigurations = (
 				360A848A2906E8B30007B3D1 /* Debug */,
 				360A848B2906E8B30007B3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F851C441292DBEB7007BBF95 /* Build configuration list for PBXNativeTarget "BudgetServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F851C43F292DBEB7007BBF95 /* Debug */,
+				F851C440292DBEB7007BBF95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
